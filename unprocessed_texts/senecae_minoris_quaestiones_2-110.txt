@@ -1,0 +1,11 @@
+[37,3] Aut futurum, inquit, est aut non ; 
+
+si est futurum, etiamsi non susceperis uota, fiet.
+
+Si non est futurum, etiamsi non susceperis uota, fiet. 
+
+Falsa est ista interrogat”o, quia illam mediam
+
+inter ista exceptionem praeteris : futurum hoc est,
+
+sed si uota suscepta fuerint.
