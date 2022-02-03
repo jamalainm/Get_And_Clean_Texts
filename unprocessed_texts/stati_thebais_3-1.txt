@@ -84,7 +84,7 @@ nunc ferrum aspectans: 'numquam tibi sanguinis huius
 ius erit aut magno feries imperdita Tydeo 
 pectora; uado equidem exultans ereptaque fata                 85 
 insequor et comites feror expectatus ad umbras. 
-te superis fratrique++' et iam media orsa loquentis 
+te superis fratrique' et iam media orsa loquentis 
 absciderat plenum capulo latus; ille dolori 
 pugnat et ingentem nisu duplicatus in ictum 
 corruit, extremisque animae singultibus errans                 90 
@@ -278,7 +278,7 @@ obsequia, et laesi seruit tamen ira mariti!
 illum ego perpetuis mihi desudare caminis 
 si iubeam uigilesque operi transmittere noctes, 
 gaudeat ornatusque nouos ipsique laboret 
-arma tibi; tu++sed scopulos et aena precando                 280 
+arma tibi; tu sed scopulos et aena precando                 280 
 flectere corda paro; solum hoc tamen anxia, solum 
 obtestor, quid me Tyrio sociare marito 
 progeniem caram infaustisque dabas hymenaeis? 
@@ -289,7 +289,7 @@ Sithonia mallem nupsisset uirgo sub Arcto
 trans Borean Thracasque tuos! indigna parumne 
 pertulimus, diuae Veneris quod filia longum 
 reptat et Illyricas deiectat uirus in herbas?                  290 
-nunc gentem inmeritam++' lacrimas non pertulit ultra 
+nunc gentem inmeritam' lacrimas non pertulit ultra 
 Bellipotens; hastam laeua transumit et alto 
 (haud mora) desiluit curru clipeoque receptam 
 laedit in amplexu dictisque ita mulcet amicis: 

@@ -108,7 +108,7 @@ def find_greek_words():
 #                greek.append(fn)
 #            elif bool(re.search(r'(Ð)', text)):
 #                greek.append(fn)
-            elif bool(re.search(r'[‰=+«»±§Ø°¤Æç¢ÐéêËÈÊÎÒÜÙÚwŸž]', text)):
+            elif bool(re.search(r'[&‰¾=«»±§Ø°¤Æãç¢ÐéêëËÈÊÍÎÒÜÙÚŲwŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -149,6 +149,15 @@ def clean_and_process_texts():
     Let's also look for the non-symmetrical quotation marks
 
     And sometimes we have two + in place of an em dash
+
+    This mysterious character appears in some greek words: 
+
+    Looks like HS sometimes is followed by a tricky period.
+
+    Also difficulty in recognizing / processing dates
+
+    Some of the headers for Cicero's letters break into the middle
+    of the text. E.g: EPP. AD ATTICVM XIV
     """
     entries = os.listdir(in_directory)
 
