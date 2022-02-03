@@ -1,8 +1,14 @@
 import re
 import os
 import pickle
+from unidecode import unidecode
 
 # file = 'ciceronis_pro_roscio_comodeo.txt'
+def unidecode_text():
+    f = open('unprocessed_texts/ciceronis_de_finibus_5-92.txt')
+    data = f.read()
+    new_data = unidecode(data)
+    print(new_data)
 
 def clean_plinius():
     """
@@ -53,7 +59,58 @@ def find_greek_words():
     Some texts also use _____ to indicate Greek words. I guess I'll need to
     search for any occurrance of two underscores next to each other as well
     """
-    pass
+    source_dir = 'unprocessed_texts/'
+    filenames = [source_dir + f for f in os.listdir(source_dir)]
+
+    greek = []
+
+    for fn in filenames:
+        with open(fn, 'r') as f:
+            text = f.read()
+
+            if bool(re.search(r'([a-zA-Z]/[a-zA-Z])', text)):
+                greek.append(fn)
+            elif bool(re.search(r'([a-zA-Z]\\[a-zA-Z])', text)):
+                greek.append(fn)
+            elif bool(re.search(r'([a-zA-Z]=[a-zA-Z])', text)):
+                greek.append(fn)
+            elif bool(re.search(r'([a-zA-Z]/)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'([a-zA-Z]\\)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'([a-zA-Z]=)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(__)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(w)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(¤)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(Ë)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(ž)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(Æ)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(Ò)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(Ü)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(ç)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(ê)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(È)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(Ÿ)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(|)', text)):
+                greek.append(fn)
+            elif bool(re.search(r'(Ð)', text)):
+                greek.append(fn)
+
+    for gk in greek:
+        print(gk)
 
 def clean_and_process_texts():
     """
@@ -64,6 +121,18 @@ def clean_and_process_texts():
     it and an alphabetic character or quotation mark
 
     what about enclitic -ne and enclitic -ve?
+
+    It looks like there are also underscores between Roman numerals that will
+    need to be dealt with
+
+    If there's an em dash it is intepreted as a CCONJ; we'll want to replace
+    all of them with sinle hyphens, I think
+
+    Similarly, I think we'll want to insert spaces between parentheses and the
+    characters they demarcate
+
+    There's also the mysterious character (em dash?) embedded in this word
+    that has be turned into something else: roquo
     """
     entries = os.listdir(in_directory)
 
@@ -115,4 +184,4 @@ def clean_and_process_texts():
 if __name__ == '__main__':
     in_directory = "Experimental_Unprocessed_Texts"
     out_directory = "To_Be_Converted"
-    clean_emph_by_space()
+    find_greek_words()
