@@ -45,7 +45,26 @@ def clean_emph_by_space():
 
 #    ([a-zA-z]{1} {1}){2, }
 
+def find_greek_words():
+    """
+    Using slashes and maybe the tilda (accent marks) with alphabetic characters
+    on both sides, identify texts with Greek in them.
+
+    Some texts also use _____ to indicate Greek words. I guess I'll need to
+    search for any occurrance of two underscores next to each other as well
+    """
+    pass
+
 def clean_and_process_texts():
+    """
+    We should look for instances of punctuation surrounded by alphabetic
+    characters without spaces. Similarly, brackets and parentheses
+
+    We should also look for punctuation that has a space on the left between
+    it and an alphabetic character or quotation mark
+
+    what about enclitic -ne and enclitic -ve?
+    """
     entries = os.listdir(in_directory)
 
     que_words = []
