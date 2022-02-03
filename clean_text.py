@@ -130,7 +130,8 @@ def clean_and_process_texts():
     need to be dealt with
 
     If there's an em dash it is intepreted as a CCONJ; we'll want to replace
-    all of them with sinle hyphens, I think
+    all of them with sinle hyphens, I think; or maybe we get rid of all
+    hyphens? Maybe we should see how common they are.
 
     Similarly, I think we'll want to insert spaces between parentheses and the
     characters they demarcate
