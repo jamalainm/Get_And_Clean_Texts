@@ -82,35 +82,39 @@ def find_greek_words():
                 greek.append(fn)
             elif bool(re.search(r'(__)', text)):
                 greek.append(fn)
-            elif bool(re.search(r'(w)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(¤)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(Ë)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(ž)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(Æ)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(Ò)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(Ü)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(ç)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(ê)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(È)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(Ÿ)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(|)', text)):
-                greek.append(fn)
-            elif bool(re.search(r'(Ð)', text)):
+#            elif bool(re.search(r'(w)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(¤)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(Ë)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(ž)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(Æ)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(Ò)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(Ü)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(ç)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(ê)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(È)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(Ÿ)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(\|)', text)):
+#                greek.append(fn)
+#            elif bool(re.search(r'(Ð)', text)):
+#                greek.append(fn)
+            elif bool(re.search(r'[‰«»±§Ø°¤Æç¢ÐêËÈÎÒÜÙwŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
         print(gk)
+
+    print(f"Number of texts: {len(greek)}")
 
 def clean_and_process_texts():
     """
@@ -133,6 +137,13 @@ def clean_and_process_texts():
 
     There's also the mysterious character (em dash?) embedded in this word
     that has be turned into something else: roquo
+
+    Should I search for 'j' just in case it's for Greek characters before
+    doing a replace?
+
+    Like parentheses, quotation marks need to be separated from the words
+    they introduce. We also want them on the inside of closing punctuation
+    like periods, semicolons, and commas
     """
     entries = os.listdir(in_directory)
 
