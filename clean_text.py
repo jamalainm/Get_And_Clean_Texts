@@ -108,7 +108,7 @@ def find_greek_words():
 #                greek.append(fn)
 #            elif bool(re.search(r'(Ð)', text)):
 #                greek.append(fn)
-            elif bool(re.search(r'[‰«»±§Ø°¤Æç¢ÐêËÈÎÒÜÙwŸž]', text)):
+            elif bool(re.search(r'[‰«»±§Ø°¤Æç¢ÐêëËÈÊÎÒÜÙÚwŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -145,6 +145,8 @@ def clean_and_process_texts():
     Like parentheses, quotation marks need to be separated from the words
     they introduce. We also want them on the inside of closing punctuation
     like periods, semicolons, and commas
+
+    Let's also look for the non-symmetrical quotation marks
     """
     entries = os.listdir(in_directory)
 
