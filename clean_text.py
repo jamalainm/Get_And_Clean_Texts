@@ -108,7 +108,7 @@ def find_greek_words():
 #                greek.append(fn)
 #            elif bool(re.search(r'(Ð)', text)):
 #                greek.append(fn)
-            elif bool(re.search(r'[‰«»±§Ø°¤Æç¢ÐêëËÈÊÎÒÜÙÚwŸž]', text)):
+            elif bool(re.search(r'[‰=+«»±§Ø°¤Æç¢ÐéêËÈÊÎÒÜÙÚwŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -147,6 +147,8 @@ def clean_and_process_texts():
     like periods, semicolons, and commas
 
     Let's also look for the non-symmetrical quotation marks
+
+    And sometimes we have two + in place of an em dash
     """
     entries = os.listdir(in_directory)
 
