@@ -120,7 +120,7 @@ esse neque harmonia corpus sentire solere,
 principio fit uti detracto corpore multo 
 saepe tamen nobis in membris vita moretur. 
     Atque eadem rursum, cum corpora pauca caloris 
-diffugere forasque per os est editus aër, 
+diffugere forasque per os est editus aer, 
 deserit extemplo venas atque ossa relinquit; 
 noscere ut hinc possis non aequas omnia partis 
 corpora habere neque ex aequo fulcire salutem, 
@@ -231,10 +231,10 @@ scire licet perquam pauxillis esse creatam
 seminibus, quoniam fugiens nil ponderis aufert. 
     Nec tamen haec simplex nobis natura putanda est. 
 tenvis enim quaedam moribundos deserit aura 
-mixta vapore, vapor porro trahit aëra secum; 
-nec calor est quisquam, cui non sit mixtus et aër; 
+mixta vapore, vapor porro trahit aera secum; 
+nec calor est quisquam, cui non sit mixtus et aer; 
 rara quod eius enim constat natura, necessest 
-aëris inter eum primordia multa moveri. 
+aeris inter eum primordia multa moveri. 
 iam triplex animi est igitur natura reperta; 
 nec tamen haec sat sunt ad sensum cuncta creandum, 
 nil horum quoniam recipit mens posse creare 
@@ -246,7 +246,7 @@ nec magis e parvis et levibus ex elementis;
 sensiferos motus quae didit prima per artus. 
 prima cietur enim, parvis perfecta figuris, 
 inde calor motus et venti caeca potestas 
-accipit, inde aër, inde omnia mobilitantur: 
+accipit, inde aer, inde omnia mobilitantur: 
 concutitur sanguis, tum viscera persentiscunt 
 omnia, postremis datur ossibus atque medullis 
 sive voluptas est sive est contrarius ardor. 
@@ -267,7 +267,7 @@ sed quasi multae vis unius corporis extant.
 quod genus in quovis animantum viscere volgo 
 est odor et quidam color et sapor, et tamen ex his 
 omnibus est unum perfectum corporis augmen, 
-sic calor atque aër et venti caeca potestas 
+sic calor atque aer et venti caeca potestas 
 mixta creant unam naturam et mobilis illa 
 vis, initum motus ab se quae dividit ollis, 
 sensifer unde oritur primum per viscera motus. 
@@ -280,17 +280,17 @@ corporibus quia de parvis paucisque creatast,
 sic tibi nominis haec expers vis, facta minutis 
 corporibus, latet atque animae quasi totius ipsa 
 proporrost anima et dominatur corpore toto. 
-consimili ratione necessest ventus et aër 
+consimili ratione necessest ventus et aer 
 et calor inter se vigeant commixta per artus 
 atque aliis aliud subsit magis emineatque, 
 ut quiddam fieri videatur ab omnibus unum, 
 ni calor ac ventus seorsum seorsumque potestas 
-aëris interemant sensum diductaque solvant. 
+aeris interemant sensum diductaque solvant. 
 est etiam calor ille animo, quem sumit, in ira 
 cum fervescit et ex oculis micat acrius ardor; 
 est et frigida multa, comes formidinis, aura, 
 quae ciet horrorem membris et concitat artus; 
-est etiam quoque pacati status aëris ille, 
+est etiam quoque pacati status aeris ille, 
 pectore tranquillo fit qui voltuque sereno. 
 sed calidi plus est illis quibus acria corda 
 iracundaque mens facile effervescit in ira, 
@@ -300,7 +300,7 @@ nec capere irarum fluctus in pectore possunt.
 at ventosa magis cervorum frigida mens est 
 et gelidas citius per viscera concitat auras, 
 quae tremulum faciunt membris existere motum. 
-at natura boum placido magis aëre vivit 
+at natura boum placido magis aere vivit 
 nec nimis irai fax umquam subdita percit 
 fumida, suffundens caecae caliginis umbra, 
 nec gelidis torpet telis perfixa pavoris; 
@@ -394,7 +394,7 @@ quam primordia sentiscant concussa animai,
 semina corporibus nostris inmixta per artus, 
 et quam in his intervallis tuditantia possint 
 concursare coire et dissultare vicissim. 
-    Et magis est animus vitai claustra coërcens 
+    Et magis est animus vitai claustra coercens 
 et dominantior ad vitam quam vis animai. 
 nam sine mente animoque nequit residere per artus 
 temporis exiguam partem pars ulla animai, 
@@ -441,7 +441,7 @@ cum semel ex hominis membris ablata recessit;
 quippe etenim corpus, quod vas quasi constitit eius, 
 cum cohibere nequit conquassatum ex aliqua re 
 ac rarefactum detracto sanguine venis, 
-aëre qui credas posse hanc cohiberier ullo, 
+aere qui credas posse hanc cohiberier ullo, 
 corpore qui nostro rarus magis incohibens sit? 
     Praeterea gigni pariter cum corpore et una 
 crescere sentimus pariterque senescere mentem. 
@@ -454,7 +454,7 @@ corpus et obtusis ceciderunt viribus artus,
 claudicat ingenium, delirat lingua [labat] mens, 
 omnia deficiunt atque uno tempore desunt. 
 ergo dissolui quoque convenit omnem animai 
-naturam, ceu fumus, in altas aëris auras; 
+naturam, ceu fumus, in altas aeris auras; 
 quando quidem gigni pariter pariterque videmus 
 crescere et, [ut] docui, simul aevo fessa fatisci. 
     Huc accedit uti videamus, corpus ut ipsum 
@@ -506,7 +506,7 @@ tum quasi vaccillans primum consurgit et omnis
 paulatim redit in sensus animamque receptat. 
 haec igitur tantis ubi morbis corpore in ipso 
 iactentur miserisque modis distracta laborent, 
-cur eadem credis sine corpore in aëre aperto 
+cur eadem credis sine corpore in aere aperto 
 cum validis ventis aetatem degere posse? 
     Et quoniam mentem sanari corpus ut aegrum 
 cernimus et flecti medicina posse videmus, 
@@ -569,9 +569,9 @@ per nervos atque ossa tenentur corpore ab omni
 nec magnis intervallis primordia possunt 
 libera dissultare, ideo conclusa moventur 
 sensiferos motus, quos extra corpus in auras 
-aëris haut possunt post mortem eiecta moveri 
+aeris haut possunt post mortem eiecta moveri 
 propterea quia non simili ratione tenentur; 
-corpus enim atque animans erit aër, si cohibere 
+corpus enim atque animans erit aer, si cohibere 
 sese anima atque in eos poterit concludere motus, 
 quos ante in nervis et in ipso corpore agebat. 
 quare etiam atque etiam resoluto corporis omni 
@@ -589,7 +589,7 @@ perque viarum omnis flexus, in corpore qui sunt,
 atque foramina? multimodis ut noscere possis 
 dispertitam animae naturam exisse per artus 
 et prius esse sibi distractam corpore in ipso, 
-quam prolapsa foras enaret in aëris auras. 
+quam prolapsa foras enaret in aeris auras. 
     Quin etiam finis dum vitae vertitur intra, 
 saepe aliqua tamen e causa labefacta videtur 
 ire anima ac toto solui de corpore [tota] 
@@ -751,7 +751,7 @@ quod si inmortalis foret et mutare soleret
 corpora, permixtis animantes moribus essent, 
 effugeret canis Hyrcano de semine saepe 
 cornigeri incursum cervi tremeretque per auras 
-aëris accipiter fugiens veniente columba, 
+aeris accipiter fugiens veniente columba, 
 desiperent homines, saperent fera saecla ferarum. 
 illud enim falsa fertur ratione, quod aiunt 
 inmortalem animam mutato corpore flecti; 
@@ -980,7 +980,7 @@ numquid ibi horribile apparet, num triste videtur
 quicquam, non omni somno securius exstat? 
     Atque ea ni mirum quae cumque Acherunte profundo 
 prodita sunt esse, in vita sunt omnia nobis. 
-nec miser inpendens magnum timet aëre saxum 
+nec miser inpendens magnum timet aere saxum 
 Tantalus, ut famast, cassa formidine torpens; 
 sed magis in vita divom metus urget inanis 
 mortalis casumque timent quem cuique ferat fors. 

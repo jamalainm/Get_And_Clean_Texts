@@ -108,7 +108,7 @@ def find_greek_words():
 #                greek.append(fn)
 #            elif bool(re.search(r'(Ð)', text)):
 #                greek.append(fn)
-            elif bool(re.search(r'[&‰¾=«»±§Ø°¤Æãç¢ÐéêëËÈÊÍÎÒÜÙÚŲwŸž]', text)):
+            elif bool(re.search(r'[|&‰¾=«»±§Ø°¤Æãç¢ÐéêëËÈÊÍÎóÒÜÙÚŲwŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -158,6 +158,8 @@ def clean_and_process_texts():
 
     Some of the headers for Cicero's letters break into the middle
     of the text. E.g: EPP. AD ATTICVM XIV
+
+    I think 'h.' followed by a numeral indicates the time
     """
     entries = os.listdir(in_directory)
 
