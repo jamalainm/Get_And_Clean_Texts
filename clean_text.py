@@ -105,7 +105,7 @@ def find_greek_words():
 #            elif bool(re.search(r'(Ÿ)', text)):
 #                greek.append(fn)
 # Need to move '|' to another search. It seems preoccupied with numbers
-            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Ææãåç¢ÐéêëËÈÊÍÎjJþÞóòðÒÕÜÙÚŲwýŸž]', text)):
+            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Ææãåç¢ÐéêëËÈÊÍÎjJþÞóòôðÒÕÜÙÚŲwýŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -168,6 +168,9 @@ def clean_and_process_texts():
     in just 1-2 letter chunks.
 
     Look for examples of 'cic' for the number 'M'
+
+    Maybe look for 'h' following any consonant other than 't' or 'p'
+    in order to spot uses of eta?
     """
     entries = os.listdir(in_directory)
 
