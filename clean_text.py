@@ -104,12 +104,8 @@ def find_greek_words():
 #                greek.append(fn)
 #            elif bool(re.search(r'(Ÿ)', text)):
 #                greek.append(fn)
-#            elif bool(re.search(r'(\|)', text)):
-#                greek.append(fn)
-#            elif bool(re.search(r'(Ð)', text)):
-#                greek.append(fn)
 # Need to move '|' to another search. It seems preoccupied with numbers
-            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Æãç¢ÐéêëËÈÊÍÎjJþóòðÒÜÙÚŲwŸž]', text)):
+            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Æãåç¢ÐéêëËÈÊÍÎjJþÞóòðÒÜÙÚŲwýŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -164,6 +160,12 @@ def clean_and_process_texts():
 
     At least on one occasion there is a footnote started in brackets with
     the Englihs word 'Footnote'
+
+    This character is used in elision in Greek: ’
+
+    We'll need to go through at least Apuleius' Apologia and maybe other
+    texts where markup has split words apart by single spaces. Sometimes
+    in just 1-2 letter chunks.
     """
     entries = os.listdir(in_directory)
 
