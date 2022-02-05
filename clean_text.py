@@ -105,7 +105,7 @@ def find_greek_words():
 #            elif bool(re.search(r'(Ÿ)', text)):
 #                greek.append(fn)
 # Need to move '|' to another search. It seems preoccupied with numbers
-            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Æãåç¢ÐéêëËÈÊÍÎjJþÞóòðÒÜÙÚŲwýŸž]', text)):
+            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Ææãåç¢ÐéêëËÈÊÍÎjJþÞóòðÒÕÜÙÚŲwýŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
@@ -166,6 +166,8 @@ def clean_and_process_texts():
     We'll need to go through at least Apuleius' Apologia and maybe other
     texts where markup has split words apart by single spaces. Sometimes
     in just 1-2 letter chunks.
+
+    Look for examples of 'cic' for the number 'M'
     """
     entries = os.listdir(in_directory)
 
