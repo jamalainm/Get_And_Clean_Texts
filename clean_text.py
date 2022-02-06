@@ -244,7 +244,20 @@ def clean_and_process_texts():
 
                 g.write(text)
 
-def reverse_quote_period(in_directory):
+def reverse_period_quote(in_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub(r"\.'", "\.'", text)
+    
+            with open(f"{in_directory}/{e}", 'a', encoding="utf-8") as g:
+
+                g.write(text)
+
+def find_period_quote(in_directory):
     entries = os.listdir(in_directory)
 
     hits = []
@@ -253,13 +266,12 @@ def reverse_quote_period(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-#            text = re.sub(r"", " ", text)
-            if re.search(r".'", text):
-                hits.append(e)
+            if re.search(r"\.'", text):
+                hits.append(f)
 
     print(len(hits))
     print(hits[-3:])
-    
+
 def remove_newlines(in_directory,out_directory):
     entries = os.listdir(in_directory)
 
