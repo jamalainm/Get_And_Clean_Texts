@@ -264,16 +264,18 @@ def reverse_punct_quote(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            text = re.sub(r"\.'", "'.", text)
-            text = re.sub(r'\."', '".', text)
-            text = re.sub(r"\?'", "'?", text)
-            text = re.sub(r'\?"', '"?', text)
-            text = re.sub(r",'", "',", text)
-            text = re.sub(r',"', '",', text)
-            text = re.sub(r";'", "';", text)
-            text = re.sub(r';"', '";', text)
-            text = re.sub(r"!'", "'!", text)
-            text = re.sub(r'!"', '"!', text)
+#            text = re.sub(r"\.'", "'.", text)
+#            text = re.sub(r'\."', '".', text)
+#            text = re.sub(r"\?'", "'?", text)
+#            text = re.sub(r'\?"', '"?', text)
+#            text = re.sub(r",'", "',", text)
+#            text = re.sub(r',"', '",', text)
+#            text = re.sub(r";'", "';", text)
+#            text = re.sub(r';"', '";', text)
+#            text = re.sub(r"!'", "'!", text)
+#            text = re.sub(r'!"', '"!', text)
+            text = re.sub(r":'", "':", text)
+            text = re.sub(r':"', '":', text)
     
             with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
 
@@ -316,7 +318,7 @@ def find_punct_between(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            if re.search("\w,\w", text):
+            if re.search("\w-\w", text):
                 hits.append(f)
 
     print(len(hits))
@@ -344,7 +346,7 @@ def find_period_quote(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            if re.search(r"\.'", text):
+            if re.search(r":'", text):
                 hits.append(f)
 
     print(len(hits))
