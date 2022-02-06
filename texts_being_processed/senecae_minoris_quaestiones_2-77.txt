@@ -1,1 +1,1 @@
-[26,8]   Quid ergo? non aliquando etiam apparentibus stellis et nocte tranquilla fulgurat?  Sed scias licet, illic nubes esse unde splendor effertur, quas uideri a nobis terrarum tumor non sinit.
+[26, 8]   Quid ergo? non aliquando etiam apparentibus stellis et nocte tranquilla fulgurat?  Sed scias licet, illic nubes esse unde splendor effertur, quas uideri a nobis terrarum tumor non sinit.

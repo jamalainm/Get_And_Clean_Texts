@@ -1,1 +1,1 @@
-[12,6] Stellarum, inquit, duarum lumen miscetur et praebet unius  speciem, nempe sic quemadmodum rubicunda fit nubes solis incursu,  quemadmodum uespertina aut matutina flauescunt, quemadmodum  arcus alterue sol uisitur.
+[12, 6] Stellarum, inquit, duarum lumen miscetur et praebet unius  speciem, nempe sic quemadmodum rubicunda fit nubes solis incursu,  quemadmodum uespertina aut matutina flauescunt, quemadmodum  arcus alterue sol uisitur.

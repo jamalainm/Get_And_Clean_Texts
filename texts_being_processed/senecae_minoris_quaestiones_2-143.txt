@@ -1,1 +1,1 @@
-[50,1]   Quanto simplicior diuisio est qua utebatur Attalus noster, uir egregius, qui Etruscorum disciplinam Graeca subtilitate miscuerat : ex fulminibus quaedara sunt quae significant id quod ad nos pertinet, quaedam aut nihil significant aut id cuius intellectus ad nos non peruenit.
+[50, 1]   Quanto simplicior diuisio est qua utebatur Attalus noster, uir egregius, qui Etruscorum disciplinam Graeca subtilitate miscuerat : ex fulminibus quaedara sunt quae significant id quod ad nos pertinet, quaedam aut nihil significant aut id cuius intellectus ad nos non peruenit.

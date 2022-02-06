@@ -316,11 +316,24 @@ def find_punct_between(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            if re.search("\w\.\w", text):
+            if re.search("\w,\w", text):
                 hits.append(f)
 
     print(len(hits))
     print(hits[-3:])
+
+def replace_punct_between(in_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub(r'(\w,)(\w)', r'\1 \2', text)
+
+            with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
+
+                g.write(text)
 
 def find_period_quote(in_directory):
     entries = os.listdir(in_directory)
@@ -357,4 +370,4 @@ if __name__ == '__main__':
 #    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
 #    remove_newlines(in_directory,out_directory)
-    replace_punct_numeral(out_directory)
+    find_punct_between(out_directory)

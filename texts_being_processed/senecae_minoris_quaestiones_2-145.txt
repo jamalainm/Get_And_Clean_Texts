@@ -1,1 +1,1 @@
-[50,3]   Mixta aut partem habent boni, partem mali, aut mala in bonum, bona in malum uertunt. Nec aduersa nec laeta sunt quae aliquam nobis actionem significant qua nec terreri nec laetari debemus, ut peregrinationem in qua nec metus quicquam nec spei sit.
+[50, 3]   Mixta aut partem habent boni, partem mali, aut mala in bonum, bona in malum uertunt. Nec aduersa nec laeta sunt quae aliquam nobis actionem significant qua nec terreri nec laetari debemus, ut peregrinationem in qua nec metus quicquam nec spei sit.

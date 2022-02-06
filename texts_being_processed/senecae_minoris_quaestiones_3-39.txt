@@ -1,1 +1,1 @@
-[10,3] Nihil deficit quod in se redit: omnium elementorum alterni  recursus sunt; quicquid alteri perit, in alterum transit,  et natura partes suas uelut in ponderibus constitutas  examinat, ne portionum aequitate turbata mundus praeponderet.
+[10, 3] Nihil deficit quod in se redit: omnium elementorum alterni  recursus sunt; quicquid alteri perit, in alterum transit,  et natura partes suas uelut in ponderibus constitutas  examinat, ne portionum aequitate turbata mundus praeponderet.
