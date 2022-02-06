@@ -279,6 +279,49 @@ def reverse_punct_quote(in_directory):
 
                 g.write(text)
 
+def find_punct_numeral(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            if re.search("\d\.", text):
+                hits.append(f)
+
+    print(len(hits))
+    print(hits[-3:])
+
+def replace_punct_numeral(in_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub("\d\.", "", text)
+
+            with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
+
+                g.write(text)
+
+def find_punct_between(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            if re.search("\w\.\w", text):
+                hits.append(f)
+
+    print(len(hits))
+    print(hits[-3:])
+
 def find_period_quote(in_directory):
     entries = os.listdir(in_directory)
 
@@ -311,6 +354,7 @@ def remove_newlines(in_directory,out_directory):
 if __name__ == '__main__':
 #    in_directory = "unprocessed_texts"
     out_directory = "texts_being_processed"
-    remove_underscore(out_directory)
+#    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
 #    remove_newlines(in_directory,out_directory)
+    replace_punct_numeral(out_directory)
