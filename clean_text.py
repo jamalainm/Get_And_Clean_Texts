@@ -405,5 +405,4 @@ if __name__ == '__main__':
 #    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
 #    remove_newlines(in_directory,out_directory)
-#    find_punct_between(out_directory)
-    find_num_between_parens(out_directory)
+    find_punct_between(out_directory)

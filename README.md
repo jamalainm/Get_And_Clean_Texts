@@ -38,3 +38,5 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 
 1. Maybe look for 'h' following any consonant other than 't' or 'p' in order to spot uses of eta?
 
+1. Make sure that colons are left adjacent to characters without spaces.
+
