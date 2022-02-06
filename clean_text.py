@@ -113,18 +113,36 @@ def find_greek_words():
 
     print(f"Number of texts: {len(greek)}")
 
-def remove_newlines(in_directory,out_directory):
+def report_bad_emdash(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            if re.search(r"", text):
+                hits.append(e)
+
+    print(len(hits))
+    print(hits[-3:])
+
+def remove_bad_emdash(in_directory,out_directory):
     entries = os.listdir(in_directory)
 
     for e in entries:
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            text = re.sub(r"\n+", " ", text)
+#            text = re.sub(r"", " ", text)
+            if re.search(r"", text):
+                text = str(text)
+    
 
             with open(f"{out_directory}/{e}", 'a') as g:
 
                 g.write(text)
+
 
 def clean_and_process_texts():
     """
@@ -145,12 +163,6 @@ def clean_and_process_texts():
 
     Similarly, I think we'll want to insert spaces between parentheses and the
     characters they demarcate
-
-    There's also the mysterious character (em dash?) embedded in this word
-    that has be turned into something else: roquo
-
-    Should I search for 'j' just in case it's for Greek characters before
-    doing a replace?
 
     Like parentheses, quotation marks need to be separated from the words
     they introduce. We also want them on the inside of closing punctuation
@@ -231,6 +243,36 @@ def clean_and_process_texts():
             with open(f"{out_directory}/{e}", 'a') as g:
 
                 g.write(text)
+
+def reverse_quote_period(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+#            text = re.sub(r"", " ", text)
+            if re.search(r".'", text):
+                hits.append(e)
+
+    print(len(hits))
+    print(hits[-3:])
+    
+def remove_newlines(in_directory,out_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub(r"\n+", " ", text)
+
+            with open(f"{out_directory}/{e}", 'a', encoding='utf8') as g:
+
+                g.write(text)
+
 
 if __name__ == '__main__':
     in_directory = "unprocessed_texts"
