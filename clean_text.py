@@ -309,6 +309,36 @@ def replace_punct_numeral(in_directory):
 
                 g.write(text)
 
+def replace_num_between_parens(in_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub("(\((\d)+\))", "", text)
+
+            with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
+
+                g.write(text)
+
+def find_num_between_parens(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            if re.search("(\((\d)+\))", text):
+                full_name = in_directory + '/' + e
+                hits.append(full_name)
+
+    for h in hits:
+        print(h)
+    print(len(hits))
+    
 def find_punct_between(in_directory):
     entries = os.listdir(in_directory)
 
@@ -318,11 +348,14 @@ def find_punct_between(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            if re.search("\w-\w", text):
-                hits.append(f)
+            if re.search("(\w\()(\w)", text):
+                full_name = in_directory + '/' + e
+                hits.append(full_name)
 
+    for h in hits:
+        print(h)
     print(len(hits))
-    print(hits[-3:])
+    
 
 def replace_punct_between(in_directory):
     entries = os.listdir(in_directory)
@@ -372,4 +405,5 @@ if __name__ == '__main__':
 #    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
 #    remove_newlines(in_directory,out_directory)
-    find_punct_between(out_directory)
+#    find_punct_between(out_directory)
+    find_num_between_parens(out_directory)
