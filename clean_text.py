@@ -113,6 +113,19 @@ def find_greek_words():
 
     print(f"Number of texts: {len(greek)}")
 
+def remove_newlines(in_directory,out_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub(r"\n+", " ", text)
+
+            with open(f"{out_directory}/{e}", 'a') as g:
+
+                g.write(text)
+
 def clean_and_process_texts():
     """
     We should look for instances of punctuation surrounded by alphabetic
@@ -220,6 +233,6 @@ def clean_and_process_texts():
                 g.write(text)
 
 if __name__ == '__main__':
-    in_directory = "Experimental_Unprocessed_Texts"
-    out_directory = "To_Be_Converted"
-    find_greek_words()
+    in_directory = "unprocessed_texts"
+    out_directory = "texts_being_processed"
+    remove_newlines(in_directory,out_directory)

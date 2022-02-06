@@ -16,8 +16,6 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 
 1. There's also the mysterious character (em dash?) embedded in this word that has be turned into something else: roquo
 
-1. Should I search for 'j' just in case it's for Greek characters before doing a replace?
-
 1. Like parentheses, quotation marks need to be separated from the words they introduce. We also want them on the inside of closing punctuation like periods, semicolons, and commas
 
 1. Let's also look for the non-symmetrical quotation marks
