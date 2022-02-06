@@ -244,16 +244,38 @@ def clean_and_process_texts():
 
                 g.write(text)
 
-def reverse_period_quote(in_directory):
+def remove_underscore(in_directory):
     entries = os.listdir(in_directory)
 
     for e in entries:
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            text = re.sub(r"\.'", "\.'", text)
+            text = re.sub(r"_", "", text)
     
-            with open(f"{in_directory}/{e}", 'a', encoding="utf-8") as g:
+            with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
+
+                g.write(text)
+
+def reverse_punct_quote(in_directory):
+    entries = os.listdir(in_directory)
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub(r"\.'", "'.", text)
+            text = re.sub(r'\."', '".', text)
+            text = re.sub(r"\?'", "'?", text)
+            text = re.sub(r'\?"', '"?', text)
+            text = re.sub(r",'", "',", text)
+            text = re.sub(r',"', '",', text)
+            text = re.sub(r";'", "';", text)
+            text = re.sub(r';"', '";', text)
+            text = re.sub(r"!'", "'!", text)
+            text = re.sub(r'!"', '"!', text)
+    
+            with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
 
                 g.write(text)
 
@@ -287,6 +309,8 @@ def remove_newlines(in_directory,out_directory):
 
 
 if __name__ == '__main__':
-    in_directory = "unprocessed_texts"
+#    in_directory = "unprocessed_texts"
     out_directory = "texts_being_processed"
-    remove_newlines(in_directory,out_directory)
+    remove_underscore(out_directory)
+#    find_period_quote(out_directory)
+#    remove_newlines(in_directory,out_directory)

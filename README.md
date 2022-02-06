@@ -8,8 +8,6 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 
 1. what about enclitic -ne and enclitic -ve?
 
-1. It looks like there are also underscores between Roman numerals that will need to be dealt with
-
 1. If there's an em dash it is intepreted as a CCONJ; we'll want to replace all of them with sinle hyphens, I think; or maybe we get rid of all hyphens? Maybe we should see how common they are.
 
 1. Similarly, I think we'll want to insert spaces between parentheses and the characters they demarcate

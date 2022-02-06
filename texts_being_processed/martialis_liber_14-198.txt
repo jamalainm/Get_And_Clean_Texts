@@ -1,1 +1,1 @@
-C               Panaca.C               Panaca.C               Panaca.C               Panaca.C               Panaca.
+C               Panaca.
