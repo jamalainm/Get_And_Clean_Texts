@@ -40,3 +40,4 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 
 1. Make sure that colons are left adjacent to characters without spaces.
 
+1. At least judging from one passage of Apuleius' De Mundo (13); there is A LOT of Greek that is not distinguished from the surrounding Latin at all.
