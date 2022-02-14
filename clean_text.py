@@ -4,6 +4,39 @@ import pickle
 from unidecode import unidecode
 
 # file = 'ciceronis_pro_roscio_comodeo.txt'
+def find_numerals(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            if re.sub(r"M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})(?<=(I|V|X|C|D|M))", "", text):
+                full_name = in_directory + '/' + e
+                hits.append(full_name)
+
+    for h in hits:
+        print(h)
+
+def remove_numeral_sections(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub(r"^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})(?<=(I|V|X|C|D|M))\.( )+", "", text)
+            full_name = in_directory + '/' + e
+            hits.append(full_name)
+
+            with open(f"{'texts_without_section_numbers'}/{e}", 'a') as g:
+
+                g.write(text)
+
 def unidecode_text():
     f = open('unprocessed_texts/ciceronis_de_finibus_5-92.txt')
     data = f.read()
@@ -348,7 +381,8 @@ def find_punct_between(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            if re.search("(\w\()(\w)", text):
+#            if re.search("(\w\(-)(\w)", text):
+            if re.search("r[a-zA-Z]:[a-zA-Z]", text):
                 full_name = in_directory + '/' + e
                 hits.append(full_name)
 
@@ -400,7 +434,7 @@ def remove_newlines(in_directory,out_directory):
 
 
 if __name__ == '__main__':
-#    in_directory = "unprocessed_texts"
+#    in_directory = "texts_without_section_numbers"
     out_directory = "texts_being_processed"
 #    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
