@@ -382,7 +382,7 @@ def find_punct_between(in_directory):
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
 #            if re.search("(\w\(-)(\w)", text):
-            if re.search("r[a-zA-Z]:[a-zA-Z]", text):
+            if re.search("r[a-zA-Z]\)[a-zA-Z]", text):
                 full_name = in_directory + '/' + e
                 hits.append(full_name)
 
