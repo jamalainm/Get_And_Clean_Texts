@@ -1,1 +1,1 @@
-(2 C Q : REX : C : F) (2 DC) 2 EC
+(2 C Q : REX: C: F) (2 DC) 2 EC

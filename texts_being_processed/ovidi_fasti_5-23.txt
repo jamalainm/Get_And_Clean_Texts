@@ -1,1 +1,1 @@
-1 G EID : NP (1 H F)
+1 G EID: NP (1 H F)

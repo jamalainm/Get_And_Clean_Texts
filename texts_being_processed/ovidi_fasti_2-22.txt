@@ -1,1 +1,1 @@
-(1 A C) (1 B C) (2 C C) 2 D FERAL : F vel FP                532a
+(1 A C) (1 B C) (2 C C) 2 D FERAL: F vel FP                532a

@@ -4,6 +4,41 @@ import pickle
 from unidecode import unidecode
 
 # file = 'ciceronis_pro_roscio_comodeo.txt'
+def remove_numeral_space_punct(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            text = re.sub("([LXIVCDM]+) ([\.,;:!?])", r'\1\2', text)
+            full_name = in_directory + '/' + e
+            hits.append(full_name)
+
+            with open(f"{in_directory}/{e}", 'w', encoding="utf-8") as g:
+
+                g.write(text)
+
+def space_punct(in_directory):
+    entries = os.listdir(in_directory)
+
+    hits = []
+
+    for e in entries:
+
+        with open(f"{in_directory}/{e}") as f:
+            text = f.read()
+            if re.search("([LXIVCDM]+) ([\.,;:!?])", text):
+                if not re.search("\. \. \.", text):
+                    full_name = in_directory + '/' + e
+                    hits.append(full_name)
+
+    for hit in hits:
+        print(hit)
+    print(len(hits))
+
 def find_numerals(in_directory):
     entries = os.listdir(in_directory)
 
@@ -439,4 +474,4 @@ if __name__ == '__main__':
 #    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
 #    remove_newlines(in_directory,out_directory)
-    find_punct_between(out_directory)
+    remove_numeral_space_punct(out_directory)

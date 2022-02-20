@@ -2,7 +2,7 @@
 We'll be scraping The Latin Library, breaking texts up into paragraphs, standardizing some spelling, removing certain characters, etc.
 
 ## Observations and things to do:
-1. We should look for instances of punctuation surrounded by alphabetic characters without spaces. Similarly, brackets and parentheses
+1. We should look for instances of punctuation surrounded by alphabetic characters without spaces. Similarly, brackets and parentheses. We'll also need to find brackets at the beginning or ends of words.
 
 1. We should also look for punctuation that has a space on the left between it and an alphabetic character or quotation mark
 
@@ -43,3 +43,5 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 1. At least judging from one passage of Apuleius' De Mundo (13); there is A LOT of Greek that is not distinguished from the surrounding Latin at all.
 
 1. Valerius Maximus has a strange organizational principal whereby some sections have an 'ext.' in them. Will need to remove.
+
+1. It looks like sometimes spaces signify lost html tags, so that two spaces in a row could signify Greek words
