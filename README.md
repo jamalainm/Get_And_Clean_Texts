@@ -6,6 +6,10 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 
 1. We should also look for punctuation that has a space on the left between it and an alphabetic character or quotation mark
 
+1. Don't forget punctuation that has a character on the right hand side.
+
+1. We might want to take a look at hyphens. There's a lot of variation in their use
+
 1. what about enclitic -ne and enclitic -ve?
 
 1. Similarly, I think we'll want to insert spaces between parentheses and the characters they demarcate

@@ -1,1 +1,1 @@
-[21, 3] Ergo et utramque rem ignem esse constat et utramque rem inter se meando distare ; fulguratio enim est non perlatum usque in terras fulmen, et rursus licet dicas fulmen esse fulgurationem usque in terras perductam.
+[21, 3] Ergo et utramque rem ignem esse constat et utramque rem inter se meando distare; fulguratio enim est non perlatum usque in terras fulmen, et rursus licet dicas fulmen esse fulgurationem usque in terras perductam.

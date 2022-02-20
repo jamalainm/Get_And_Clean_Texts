@@ -4,7 +4,7 @@ import pickle
 from unidecode import unidecode
 
 # file = 'ciceronis_pro_roscio_comodeo.txt'
-def remove_numeral_space_punct(in_directory):
+def remove_space_punct(in_directory):
     entries = os.listdir(in_directory)
 
     hits = []
@@ -13,7 +13,8 @@ def remove_numeral_space_punct(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            text = re.sub("([LXIVCDM]+) ([\.,;:!?])", r'\1\2', text)
+#            text = re.sub("([LXIVCDM]+) ([\.,;:!?])", r'\1\2', text)
+            text = re.sub(" ;", r';', text)
             full_name = in_directory + '/' + e
             hits.append(full_name)
 
@@ -21,7 +22,7 @@ def remove_numeral_space_punct(in_directory):
 
                 g.write(text)
 
-def space_punct(in_directory):
+def find_space_punct(in_directory):
     entries = os.listdir(in_directory)
 
     hits = []
@@ -30,7 +31,7 @@ def space_punct(in_directory):
 
         with open(f"{in_directory}/{e}") as f:
             text = f.read()
-            if re.search("([LXIVCDM]+) ([\.,;:!?])", text):
+            if re.search(" ([\.,;:!?])", text):
                 if not re.search("\. \. \.", text):
                     full_name = in_directory + '/' + e
                     hits.append(full_name)
@@ -474,4 +475,4 @@ if __name__ == '__main__':
 #    remove_underscore(out_directory)
 #    find_period_quote(out_directory)
 #    remove_newlines(in_directory,out_directory)
-    remove_numeral_space_punct(out_directory)
+    find_space_punct(out_directory)
