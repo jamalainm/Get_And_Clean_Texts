@@ -1,1 +1,1 @@
-[40, 5]  Item quod accensum est, - potest enim illud ipso transitu ignis ussisse, - quis nescit uri quidem nec ardere, nihil autem ardere quod non et uratur? Vnum hoc adiciam : potest aliquid esse combustum nec accensum, potest accensum esse nec combustum.
+[40, 5]  Item quod accensum est, potest enim illud ipso transitu ignis ussisse, quis nescit uri quidem nec ardere, nihil autem ardere quod non et uratur? Vnum hoc adiciam: potest aliquid esse combustum nec accensum, potest accensum esse nec combustum.

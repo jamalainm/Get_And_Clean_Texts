@@ -49,3 +49,9 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 1. Valerius Maximus has a strange organizational principal whereby some sections have an 'ext.' in them. Will need to remove.
 
 1. It looks like sometimes spaces signify lost html tags, so that two spaces in a row could signify Greek words
+
+1. Will need to look at plus signs, which regularly indicate corrupted texts
+
+1. Sometimes numerals have commas betweene them, eg: 5, 2
+
+1. Some Greek is written without accents but with parentheses for breathing marks. Should search for '(' and ')' between alphabetic characters

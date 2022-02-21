@@ -174,7 +174,7 @@ def find_greek_words():
 #            elif bool(re.search(r'(Ÿ)', text)):
 #                greek.append(fn)
 # Need to move '|' to another search. It seems preoccupied with numbers
-            elif bool(re.search(r'[¶&‰¾=«»±§Ø°¤Ææãåç¢ÐéêëËÈÊÍÎjJþÞóòôðÒÕÜÙÚŲwýŸž]', text)):
+            elif bool(re.search(r'[®¶&‰¾=«»±§Ø°¤Ææãåç¢ÐéêëËÈÊÍÎjJþÞóòôðÒÕÜÙÚŲwýŸž]', text)):
                 greek.append(fn)
 
     for gk in greek:
