@@ -24,7 +24,7 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 
 1. This mysterious character appears in some greek words: 
 
-1. Looks like HS sometimes is followed by a tricky period.
+1. Looks like HS sometimes is followed by a tricky period. Some texts also convert Roman numerals into Arabic following this symbol.
 
 1. Also difficulty in recognizing / processing dates
 
@@ -55,3 +55,11 @@ We'll be scraping The Latin Library, breaking texts up into paragraphs, standard
 1. Sometimes numerals have commas betweene them, eg: 5, 2
 
 1. Some Greek is written without accents but with parentheses for breathing marks. Should search for '(' and ')' between alphabetic characters
+
+1. Maybe search for date formats like   "a. d." (ignoring capitalization) "Kal.", "Non.", "Id." to find lower case numerals that should be capitalized. Sometimes "kalendae" is just abbreviated "K." We could also do a search for the month abbreviations: "Mai.", "Dec.", "Decembr"
+
+1. There's an abbreviation in the Historiae that I see a lot: p. c. . . . "patres conscripti"? Also 'pl' after 'tribunus' in various texts for 'plebis' and of course the 'p' with 'res' for 'res publica'
+
+1. Should we look for texts that have fewer than 10 words in them? Many of those might be gibberish / titles or blank.
+
+1. UDPipe doesn't recognize words that are all in caps.
